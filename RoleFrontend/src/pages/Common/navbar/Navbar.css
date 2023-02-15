@@ -1,0 +1,60 @@
+.Navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  background-color: var(--menu);
+  width: 100%;
+  position: fixed;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.685);
+  color: var(--text-primary);
+}
+.Navbar .wrapper {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Navbar .wrapper .left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.Navbar .wrapper .left .menu-icon{
+  padding: 10px;
+  cursor: pointer;
+}
+.Navbar .wrapper .left .menu-icon:hover{
+  background-color: rgba(158, 157, 157, 0.342);
+  border-radius: 50%;
+}
+.Navbar .wrapper .left .top {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Navbar .wrapper .left .top .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+.Navbar .wrapper .search {
+  display: flex;
+  align-items: center;
+  border: 0.5px solid lightgray;
+  padding: 3px;
+  border-radius: 5px;
+}
+.Navbar .wrapper .search input {
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  background: transparent;
+}
+.Navbar .wrapper .search input::placeholder {
+  font-size: 12px;
+}

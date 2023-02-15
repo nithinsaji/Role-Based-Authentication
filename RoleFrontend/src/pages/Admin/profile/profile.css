@@ -1,0 +1,137 @@
+.profile-container{
+    margin: 20px;
+    width: 100%;
+    -webkit-box-shadow: 2px 2px 7px var(--shadow);
+    -moz-box-shadow: 2px 2px 7px var(--shadow);
+    box-shadow: 2px 2px 7px var(--shadow);
+    border-radius: 10px;
+}
+.profile-banner{
+    height: 30%;
+    background-color: var(--background);
+}
+.profile-body{
+    background-color: var(--menu);
+    position: relative;
+    min-height: 70%;
+    display: flex;
+}
+.profile-content{
+    min-width: 50%;
+}
+
+.profile-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.profile-wrapper span{
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+.profile-wrapper span:nth-child(1){
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+.profile-wrapper span:nth-child(4){
+    color: var(--text-primary);
+    padding: 10px 0;
+}
+.profile-wrapper span:nth-child(5){
+    font-size: 16px;
+}
+.profile-image-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    flex-direction: row;
+    width: 100%;
+    transform: translateY(-50%);
+}
+.profile-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: aqua;
+    z-index: 1;
+    border: 10px solid var(--menu);
+}
+.profile-edit{
+    align-self: center;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 0.5px solid grey;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.profile-edit:hover{
+    background-color: var(--hover);
+}
+.profile-text-wrapper{
+    margin-top: -75px;
+    flex-direction: column;
+    display: flex;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .profile-body{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .profile-image{
+        width: 100px;
+        height: 100px;
+    }
+    .profile-text-wrapper{
+        margin-top: -50px;
+    }
+}
+
+.editProfile{
+    margin-top: -70px;
+}
+.form {
+    position: relative;
+    margin: 20px 10px;
+}
+.form__input {
+    width: 250px;
+    height: 40px;
+    border: 1px solid var(--text-primary);
+    border-radius: 0.5rem;
+    font-size: 14px;
+    color: var(--text-primary);
+    outline: none;
+    background: none;
+    padding-left: 15px;
+}
+.form__input:hover {
+    border-color: var(--text-primary);
+}
+.form__input:focus {
+    border-color: var(--text-primary);
+
+}
+.form__label {
+    position: absolute;
+    left: 1.5rem;
+    top: 0.8rem;
+    padding: 0;
+    color: var(--text-primary);
+    cursor: text;
+    transition: 250ms cubic-bezier(.79,0,.16,.99);
+    background-color: var(--menu);
+}
+/* 1. When the input is in the focus state reduce the size of the label and move upwards 2. Keep label state when content is in input field */
+.form__input:focus ~ .form__label, .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+    top: -0.5rem;
+    font-size: 0.8rem;
+    left: 0.8rem;
+    padding: 0 0.5rem;
+    color: var(--text-primary);
+}

@@ -1,0 +1,17 @@
+.home{
+  width: 100%;
+}
+.homeContainer {
+  display: flex;
+  width: auto;
+  overflow-x: hidden;
+}
+.outlet{
+  display: flex;
+  flex-wrap: wrap;
+  width: -webkit-fill-available;
+  margin-top: 70px;
+  min-height: 90vh;
+}
+
+

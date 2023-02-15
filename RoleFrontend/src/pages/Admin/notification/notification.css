@@ -1,0 +1,59 @@
+.noti-container{
+    margin: 20px;
+    width: 100%;
+}
+.noti-container .card{
+    height: calc(100vh - 210px);
+}
+ .card>span{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.noti-container .card .noti-wrapper{
+    padding: 10px;
+    height: 90%;
+    overflow-y: scroll;
+}
+.noti-container .card .noti-wrapper::-webkit-scrollbar{
+    width: 5px;
+}
+.noti-container .card .noti-wrapper::-webkit-scrollbar-track{
+    background-color: var(--background);
+    border-radius: 10px;
+}
+.noti-container .card .noti-wrapper::-webkit-scrollbar-thumb{
+    background-color: var(--hover);
+    border-radius: 10px;
+}
+.noti-container .card .noti-wrapper .avatar{
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 50%;
+}
+.noti-container .card .noti-wrapper .noti-content{
+    display: flex;
+    padding: 10px;
+    border-bottom: 0.25px solid var(--hover);
+}
+.noti-container .card .noti-wrapper .noti-content .noti-text{
+    padding: 5px 20px;
+}
+.noti-container .card .noti-wrapper .noti-content .noti-text .noti-label{
+    padding-bottom: 5px;
+}
+.noti-container .card .noti-wrapper .noti-content .noti-text span:nth-child(1){
+    font-size: 16px;
+    color: var(--text-primary);
+    font-weight: 400;
+}
+.noti-container .card .noti-wrapper .noti-content .noti-text span:nth-child(2){
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-weight: 300;
+    padding-left: 10px;
+}
+.noti-container .card .noti-wrapper .noti-content .noti-text div:nth-child(2){
+    font-size: 14px;
+}

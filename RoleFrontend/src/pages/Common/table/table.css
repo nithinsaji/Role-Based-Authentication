@@ -1,0 +1,166 @@
+.card {
+    padding: 3rem ;
+    background-color: var(--menu);
+    -webkit-box-shadow: 2px 2px 7px var(--shadow);
+    -moz-box-shadow: 2px 2px 7px var(--shadow);
+    box-shadow: 2px 2px 7px var(--shadow);
+    color: var(--text-primary);
+    border-radius: 5px;
+    right: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    max-height: 50vh;
+}
+
+.tr{
+    border-bottom: 0.5px solid var(--hover);
+}
+tbody .tr:hover{
+color: var(--button);
+background-color: var(--hover);
+}
+.row th span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.row th::after{
+    color: var(--text-secondary);
+    border: none;
+    font-weight: 400;
+}
+.sort-icon svg{
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+.t-entry-body label {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.t-entry-body label select {
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.custom-select,.option{
+    border: none;
+    cursor: pointer;
+    color: var(--text-primary);
+    background-color: var(--hover);
+}
+
+.row .search {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--hover);
+}
+
+.row .search input {
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    background: transparent;
+}
+
+.row .search input::placeholder {
+    font-size: 12px;
+}
+.row form{
+    width: 100%;
+}
+.table{
+    table-layout: auto;
+    width: 100%;
+    max-height: 54vh;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.row::-webkit-scrollbar{
+    height: 5px;
+    width: 5px;
+}
+.row::-webkit-scrollbar-track{
+    background-color: var(--background);
+    border-radius: 10px;
+}
+.row::-webkit-scrollbar-thumb{
+    background-color: var(--hover);
+    border-radius: 10px;
+}
+.sorting{
+    border: 1px solid var(--border);
+    padding: 10px 10px;
+    text-align: left;
+    color: var(--text-primary);
+}
+.tr td{
+    padding: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: transparent;
+}
+.tr td select{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: var(--text-primary);
+}
+
+.tr td select option{
+    padding: 10px 20px;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    background-color: var(--menu);
+    white-space: pre-wrap;
+    cursor: pointer;
+}
+.tr .edit{
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    color: var(--text-primary);
+    border: none;
+}
+.tr .update{
+    color: var(--button);
+}
+
+
+.pagination-row .pagination{
+    display: flex;
+}
+.pagination-row .pagination .paginate_button{
+    padding: 5px 10px;
+    font-family: 400;
+    font-size: 14px;
+    list-style: none;
+    cursor: pointer;
+    border: 0.5px solid var(--text-secondary);
+    color: var(--text-secondary);
+}
+.pagination-row .pagination .paginate_button:hover{
+    background-color: var(--button);
+    border: 0.5px solid var(--button);
+    color: white;
+}
+
+.no-value td{
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    
+}
